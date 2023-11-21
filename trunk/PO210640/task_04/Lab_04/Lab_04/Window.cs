@@ -1,6 +1,6 @@
 ﻿namespace Lab_04;
 
-public class Window
+public abstract class Window
 {
     #region Fields
 
@@ -30,10 +30,7 @@ public class Window
         return _nextId++;
     }
 
-    protected virtual void DoWork()
-    {
-        // do smth
-    }
+    protected abstract void DoWork();
 
     public void ShowOrHide(bool isShown)
     {
